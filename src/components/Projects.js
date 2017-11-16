@@ -1,0 +1,15 @@
+import React, { Component } from 'react';
+
+export class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      variable: 0,
+    };
+  }
+  render() {
+    return (
+      <p>Under construction</p>
+    );
+  }
+}

@@ -26,7 +26,7 @@ export default function ExampleComponent() {
         )}
       />
       <Route
-        exact path="/example"
+        exact path="/projects"
         render={() => (
           <div>
             <ExamplePageText />
