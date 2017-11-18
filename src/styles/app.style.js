@@ -32,7 +32,7 @@ s.root = {
 };
 
 s.title = {
-  fontSize: '30px',
+  fontSize: '42px',
   paddingTop: '2vh',
   paddingBottom: '2vh',
   color: 'white',
