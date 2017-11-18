@@ -14,11 +14,17 @@
   "author": "Fbilandzija",
   "license": "MIT",
   "dependencies": {
+    "file-loader": "^1.1.5",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-interactive": "^0.8.1",
-    "react-router-dom": "^4.2.2"
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-slick": "^0.15.4",
+    "redux": "^3.7.2",
+    "slick-carousel": "^1.8.1",
+    "url-loader": "^0.6.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

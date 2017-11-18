@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { Home } from './Home';
 import PageNotFound from './PageNotFound';
 import s from '../styles/app.style';
-import { Projects } from './Projects';
-import { Team } from './Team';
-import { About } from './About';
+import Projects from './Projects';
+import Team from './Team';
+import About from './About';
 
-export default class App extends Component {
+export class App extends Component {
+  static PropTypes = {
+    background: PropTypes.array.isRequired,
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -15,7 +20,7 @@ export default class App extends Component {
     };
   }
   render() {
-    const { background } = this.state;
+    const { background } = this.props;
     return (
       <div style={s.root}>
         <h1 style={s.title}>QTech Osijek</h1>
@@ -52,3 +57,10 @@ export default class App extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  console.log(state);
+  return state;
+};
+
+export default connect(mapStateToProps)(App);
