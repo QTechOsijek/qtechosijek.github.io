@@ -53,6 +53,9 @@ export class App extends Component {
           <Route path="/about" component={About} />
           <Route component={PageNotFound} />
         </Switch>
+        <footer style={{ color: 'white', backgroundColor: '#333', width: window.innerWidth, height: '100px', position: 'absolute', bottom: '1px' }}>
+          <p style={{ marginLeft: '39%', fontSize: '20px', paddingTop: '25px' }}>Our contact: <a href="mailto:qtyos@oulook.com" target="_top">qtyos@oulook.com</a></p>
+        </footer>
       </div>
     );
   }

@@ -10,18 +10,26 @@ export class Home extends Component {
   }
   render() {
     return (
-      <div style={{ alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
-        <div style={{ paddingVertical: '30px', display: 'block', width: window.innerWidth * 0.5, marginTop: '20px' }}>
+      <div style={{ alignItems: 'center', justifyContent: 'center', display: 'flex', flexDirection: 'column' }}>
+        <div style={{ paddingVertical: '30px', display: 'block', width: window.innerWidth * 0.65, marginTop: '20px' }}>
           <Slider draggable={false} dots centerMode infinite speed={500} slidesToShow={1} slidesToScroll={1} fade lazyLoad autoplay autoplaySpeed={4500}>
-            <div style={{ maxWidth: '848px', height: '479px', position: 'relative', textAlign: 'center', alignSelf: 'center', margin: 'auto' }}>
+            <div style={{ maxWidth: '1132px', height: '632px', position: 'relative', textAlign: 'center', alignSelf: 'center', margin: 'auto' }}>
               <img src={pic1} alt="" style={{ filter: 'blur(15px)', width: '100%' }} />
-              <div style={{ position: 'absolute', top: '45%', left: '30%', fontSize: '40px', color: 'white', fontFamily: 'Anton' }}>Inspiring innovation</div>
+              <div style={{ position: 'absolute', top: '45%', left: '28%', fontSize: '60px', color: 'white', fontFamily: 'Anton' }}>Inspiring innovation</div>
             </div>
-            <div style={{ maxWidth: '848px', height: '479px', position: 'relative', textAlign: 'center', alignSelf: 'center', margin: 'auto' }}>
+            <div style={{ maxWidth: '1132px', height: '632px', position: 'relative', textAlign: 'center', alignSelf: 'center', margin: 'auto' }}>
               <img src={pic2} alt="" style={{ filter: 'blur(15px)', width: '100%' }} />
-              <div style={{ position: 'absolute', top: '45%', left: '35%', fontSize: '40px', color: 'white', fontFamily: 'Anton' }}>Amazing projects</div>
+              <div style={{ position: 'absolute', top: '45%', left: '31%', fontSize: '60px', color: 'white', fontFamily: 'Anton' }}>Amazing projects</div>
             </div>
           </Slider>
+        </div>
+        <div style={{ marginTop: '35px', paddingBottom: '25px', width: window.innerWidth, backgroundColor: '#4CAF50', color: 'white' }}>
+          <h2 style={{ marginLeft: '40px', fontSize: '50px' }}>What are we doing?</h2>
+          <ul style={{ fontSize: '35px', marginLeft: '80px' }}>
+            <li style={{ margin: '35px' }}>Mergeing our individual projects and extending them for wider usage</li>
+            <li style={{ margin: '35px' }}>Motivating others</li>
+            <li style={{ margin: '35px' }}>Learning and having fun</li>
+          </ul>
         </div>
       </div>
     );

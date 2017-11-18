@@ -7,8 +7,9 @@ s.root = {
   fontWeight: '300',
   fontSize: '16px',
   letterSpacing: '0.025em',
-  padding: '0 0 12vh 0',
+  padding: '0 0 98px 0',
   width: window.innerWidth,
+  minHeight: window.innerHeight * 0.9,
   // use responsive max-width to simulate padding/margin to allow
   // space for vertical scroll bar without creating horizontal scroll bar
   // (if there is padding, the window will scroll horizontally to show the padding)
