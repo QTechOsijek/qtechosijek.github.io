@@ -11,7 +11,7 @@ export class Home extends Component {
   render() {
     return (
       <div style={{ alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
-        <div style={{ paddingVertical: '30px', display: 'block', width: window.innerWidth * 0.5 }}>
+        <div style={{ paddingVertical: '30px', display: 'block', width: window.innerWidth * 0.5, marginTop: '20px' }}>
           <Slider draggable={false} dots centerMode infinite speed={500} slidesToShow={1} slidesToScroll={1} fade lazyLoad autoplay autoplaySpeed={4500}>
             <div style={{ maxWidth: '848px', height: '479px', position: 'relative', textAlign: 'center', alignSelf: 'center', margin: 'auto' }}>
               <img src={pic1} alt="" style={{ filter: 'blur(15px)', width: '100%' }} />

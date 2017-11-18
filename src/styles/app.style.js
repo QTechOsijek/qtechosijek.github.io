@@ -7,7 +7,7 @@ s.root = {
   fontWeight: '300',
   fontSize: '16px',
   letterSpacing: '0.025em',
-  padding: '3vh 0 12vh 0',
+  padding: '0 0 12vh 0',
   width: window.innerWidth,
   // use responsive max-width to simulate padding/margin to allow
   // space for vertical scroll bar without creating horizontal scroll bar
@@ -32,8 +32,12 @@ s.root = {
 
 s.title = {
   fontSize: '30px',
-  marginBottom: '2vh',
+  paddingTop: '2vh',
+  paddingBottom: '2vh',
+  color: 'white',
+  fontFamily: 'Archivo Black',
   textAlign: 'center',
+  backgroundColor: '#4CAF50',
 };
 
 s.repoLink = {
