@@ -40,9 +40,9 @@ class Projects extends Component {
   render() {
     const { everythingElse } = styles;
     return (
-      <div>
+      <div style={{ overflow: 'hidden', height: '80%' }}>
         <StyleRoot>
-          <div style={{ display: 'flex', flexDirection: 'row', marginTop: '40px', justifyContent: 'space-around' }}>
+          <div style={{ display: 'flex', flexDirection: 'row', paddingTop: '30px', justifyContent: 'space-around', paddingBottom: '30px' }}>
             <a href="https://github.com/QTechOsijek/Low-cost_Smart-house">
               <div style={everythingElse}>
                 <img src={project1} alt="Low-cost smart house" width={window.innerWidth * 0.3} />
@@ -56,6 +56,10 @@ class Projects extends Component {
                 <p style={{ fontSize: '20px', paddingTop: '10px' }}>AI controlled smart house</p>
               </div>
             }
+          </div>
+          <div style={{ position: 'relative', color: 'white', backgroundColor: '#67AECA', width: window.innerWidth, padding: '15px 0 15px 0' }}>
+            <h2 style={{ fontSize: '35px', paddingLeft: '25px' }}>Our smart house projects</h2>
+            <h4 style={{ fontSize: '25px', paddingLeft: '25px' }}>Designed to change every house to smart house</h4>
           </div>
         </StyleRoot>
       </div>
