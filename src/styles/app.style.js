@@ -38,7 +38,7 @@ s.title = {
   color: 'white',
   fontFamily: 'Archivo Black',
   textAlign: 'center',
-  backgroundColor: '#4CAF50',
+  backgroundColor: '#67AECA',
 };
 
 s.repoLink = {

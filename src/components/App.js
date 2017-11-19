@@ -15,9 +15,7 @@ export class App extends Component {
   }
   constructor(props) {
     super(props);
-    this.state = {
-      background: ['#4CAF50', '#333', '#333', '#333'],
-    };
+    this.state = {};
   }
   render() {
     const { background } = this.props;
@@ -31,7 +29,9 @@ export class App extends Component {
             margin: 0,
             padding: 0,
             overflow: 'hidden',
-            backgroundColor: '#333' }}
+            backgroundColor: '#675682',
+            alignItems: 'center',
+          }}
         >
           <li style={{ float: 'left' }}>
             <a style={{ color: 'white', display: 'block', textDecoration: 'none', textAlign: 'center', padding: '14px 16px', backgroundColor: background[0] }} href="/">Home</a>
@@ -53,7 +53,7 @@ export class App extends Component {
           <Route path="/about" component={About} />
           <Route component={PageNotFound} />
         </Switch>
-        <footer style={{ color: 'white', textAlign: 'center', backgroundColor: '#333', width: window.innerWidth, height: '100px', position: 'absolute', bottom: '1px' }}>
+        <footer style={{ color: 'white', textAlign: 'center', backgroundColor: '#675682', width: window.innerWidth, height: '100px', position: 'absolute', bottom: '1px' }}>
           <p style={{ fontSize: '20px', paddingTop: '25px' }}>Our contact: <a href="mailto:qtyos@oulook.com" target="_top">qtyos@oulook.com</a></p>
         </footer>
       </div>

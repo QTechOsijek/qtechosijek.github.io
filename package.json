@@ -16,7 +16,10 @@
   "dependencies": {
     "file-loader": "^1.1.5",
     "prop-types": "^15.6.0",
+    "radium": "^0.19.6",
     "react": "^16.0.0",
+    "react-addons-transition-group": "^15.6.2",
+    "react-animations": "^1.0.0",
     "react-dom": "^16.0.0",
     "react-interactive": "^0.8.1",
     "react-redux": "^5.0.6",
