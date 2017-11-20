@@ -1,8 +1,23 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import { GoChevronLeft, GoChevronRight } from 'react-icons/lib/go';
 import pic1 from '../images/qtech1.png';
 import pic2 from '../images/qtech2.png';
 import pic3 from '../images/qtech3.png';
+
+
+function PrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <GoChevronLeft onClick={onClick} style={{ ...style, color: '#675682', width: '32px', height: '32px' }} className={className} />
+  );
+}
+function NextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <GoChevronRight onClick={onClick} style={{ ...style, color: '#675682', width: '32px', height: '32px' }} className={className} />
+  );
+}
 
 export class Home extends Component {
   constructor(props) {
@@ -12,8 +27,13 @@ export class Home extends Component {
   render() {
     return (
       <div style={{ alignItems: 'center', justifyContent: 'center', display: 'flex', flexDirection: 'column' }}>
-        <div style={{ paddingVertical: '30px', display: 'block', width: window.innerWidth * 0.62, marginTop: '20px', textAlign: 'center' }}>
-          <Slider draggable={false} dots centerMode infinite speed={500} slidesToShow={1} slidesToScroll={1} fade lazyLoad autoplay autoplaySpeed={4500}>
+        <div style={{ paddingVertical: '30px', display: 'block', width: '1200px', marginTop: '20px', justifyContent: 'center' }}>
+          <Slider
+            draggable={false} dots centerMode infinite
+            speed={500} slidesToShow={1} slidesToScroll={1}
+            fade lazyLoad autoplay autoplaySpeed={4500}
+            prevArrow={<PrevArrow />} nextArrow={<NextArrow />}
+          >
             <div style={{ maxWidth: '1132px', height: '632px', position: 'relative', textAlign: 'center', alignSelf: 'center', margin: 'auto' }}>
               <img src={pic1} alt="" style={{ filter: 'blur(15px)', width: '100%' }} />
               <div style={{ position: 'absolute', top: '45%', left: '28%', fontSize: '60px', color: 'white', fontFamily: 'Anton' }}>Inspiring innovation</div>
