@@ -42,7 +42,7 @@ class Projects extends Component {
     return (
       <div style={{ overflow: 'hidden', minHeight: window.innerHeight * 0.8 }}>
         <StyleRoot>
-          <div style={{ display: 'flex', flexDirection: 'row', paddingTop: '30px', justifyContent: 'space-around', paddingBottom: '30px', minHeight: window.innerHeight * 0.6 }}>
+          <div style={{ display: 'flex', flexDirection: 'row', paddingTop: '30px', justifyContent: 'space-around', paddingBottom: '30px', minHeight: window.innerHeight * 0.63 }}>
             <a href="https://github.com/QTechOsijek/Low-cost_Smart-house">
               <div style={everythingElse}>
                 <img src={project1} alt="Low-cost smart house" width={window.innerWidth * 0.3} />
