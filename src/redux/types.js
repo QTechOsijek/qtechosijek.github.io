@@ -1,1 +1,0 @@
-export const CHANGE_NAV_COLOR = 'CHANGE_NAV_COLOR';
