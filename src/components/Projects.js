@@ -17,6 +17,7 @@ const styles = {
     width: window.innerWidth * 0.31,
     padding: '25px 0 25px 0',
     color: 'white',
+
   },
 };
 
@@ -53,13 +54,13 @@ class Projects extends Component {
               !this.state.hidden &&
               <div style={everythingElse}>
                 <img src={project2} alt="AI controlled SH" width={window.innerWidth * 0.3} style={{ filter: 'blur(4px)' }} />
-                <p style={{ fontSize: '20px', paddingTop: '10px' }}>AI controlled smart house</p>
+                <p style={{ fontSize: '20px', paddingTop: '10px ' }}>AI controlled smart house</p>
               </div>
             }
           </div>
           <div style={{ position: 'relative', color: 'white', backgroundColor: '#67AECA', width: window.innerWidth, padding: '15px 0 15px 0' }}>
             <h2 style={{ fontSize: '35px', paddingLeft: '25px' }}>Our smart house projects</h2>
-            <h4 style={{ fontSize: '25px', paddingLeft: '25px' }}>Designed to change every house to smart house</h4>
+            <h4 style={{ fontSize: '25px', paddingLeft: '25px' }}>Designed to change every house to a smart house</h4>
           </div>
         </StyleRoot>
       </div>
